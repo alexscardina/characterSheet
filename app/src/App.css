@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +31,140 @@
     transform: rotate(360deg);
   }
 }
+
+.strength-label {
+  margin-top: 180px;
+  margin-left: 65px;
+  font-size: 10pt;
+}
+
+.stat-label {
+  margin-top: 20px;
+  margin-left: 64px;
+  font-size: 10pt;
+}
+
+.stat-card {
+  background-color: rgb(217, 219, 218);
+  box-shadow: 0 4px 8px 0 rgba(00,0,0,0.2);
+  padding: 15px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: -18px;
+  width: 60px;
+  margin-left: 50px;
+  height: 60px;
+  border-color: black;
+  text-align: center;
+  font-size: 35pt;
+}
+
+.pos-stat-mod {
+  background-color: rgb(151, 197, 173);
+  box-shadow: 0 4px 8px 0 rgba(00,0,0,0.2);
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: -15px;
+  width: 40px;
+  margin-left: 72px;
+  height: 20px;
+  border-color: black;
+  text-align: center;
+  font-size: 13pt;
+}
+
+.zero-stat-mod {
+  background-color: rgb(137, 139, 138);
+  box-shadow: 0 4px 8px 0 rgba(00,0,0,0.2);
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: -15px;
+  width: 40px;
+  margin-left: 72px;
+  height: 20px;
+  border-color: black;
+  text-align: center;
+  font-size: 13pt;
+}
+
+.neg-stat-mod {
+  background-color: rgb(209, 130, 130);
+  box-shadow: 0 4px 8px 0 rgba(00,0,0,0.2);
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: -15px;
+  width: 40px;
+  margin-left: 72px;
+  height: 20px;
+  border-color: black;
+  text-align: center;
+  font-size: 13pt;
+}
+
+.info-card {
+  background-color: rgb(217, 219, 218);
+  box-shadow: 0 4px 8px 0 rgba(00,0,0,0.2);
+  border-radius: 10px 10px 10px 10px;
+  position: absolute;
+  top: 10px;
+  width: 600px;
+  margin-left: 550px;
+  height: 120px;
+  border-color: black;
+  text-align: left;
+  font-size: 15pt;
+}
+
+.name-card {
+  background-color: rgb(217, 219, 218);
+  position: absolute;
+  border-radius: 6px 0px 0px 6px;
+  top: 29px;
+  width: 475px;
+  margin-left: 75px;
+  height: 85px;
+  border-color: black;
+  text-align: left;
+  font-size: 10pt;
+}
+
+.prof-bonus-circle {
+  background-color: rgb(217, 219, 218);
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 164px;
+  border-radius: 50%;
+  height: 31px;
+  text-align: center;
+  font-size: 18pt;
+  padding: 9px;
+  width: 31px;
+  border: 1px solid black;
+}
+
+.prof-bonus-rectangle {
+  background-color: rgb(217, 219, 218);
+  position: absolute;
+  margin-top: 48.5px;
+  margin-left: 207px;
+  height: 18px;
+  text-align: center;
+  font-size: 12pt;
+  padding: 8px;
+  width: 138px;
+}
+
+.skills {
+  background-color: rgb(217, 219, 218);
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 160px;
+  height: 570px;
+  width: 210px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+body {
+  background-color: #282e2d;
+}
+
+

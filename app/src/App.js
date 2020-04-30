@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import StrengthCard from './components/StrengthCard'
+import StatCard from './components/StatCard'
+import CharacterInfo from './components/CharacterInfo'
+import ProficiencyBonus from './components/ProficiencyBonus'
+import SkillsCard from './components/SkillsCard'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CharacterInfo />
+      <ProficiencyBonus />
+      <SkillsCard />
+      <StrengthCard score="17"/>
+      <StatCard stat="Dexterity" score="13"/>
+      <StatCard stat="Constitution" score="16"/>
+      <StatCard stat="Intelligence" score="8"/>
+      <StatCard stat="Wisdom" score="12"/>
+      <StatCard stat="Charisma" score="11"/>
     </div>
   );
 }
