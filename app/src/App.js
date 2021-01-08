@@ -1,23 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css'
-import StrengthCard from './components/StrengthCard'
-import StatCard from './components/StatCard'
 import CharacterInfo from './components/CharacterInfo'
 import ProficiencyBonus from './components/ProficiencyBonus'
 import SkillsCard from './components/SkillsCard'
+import SavingThrows from './components/SavingThrows'
+import Stats from './components/Stats'
 
 function App() {
   return (
     <div>
       <CharacterInfo />
       <ProficiencyBonus />
+      <SavingThrows />
       <SkillsCard />
-      <StrengthCard score="17"/>
-      <StatCard stat="Dexterity" score="13"/>
-      <StatCard stat="Constitution" score="16"/>
-      <StatCard stat="Intelligence" score="8"/>
-      <StatCard stat="Wisdom" score="12"/>
-      <StatCard stat="Charisma" score="11"/>
+      <Stats 
+        str = "10"
+        dex = "13"
+        con = "15"
+        int = "9"
+        wis = "16"
+        cha = "19"
+      />
     </div>
   );
 }

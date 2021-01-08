@@ -1,60 +1,34 @@
 import React from "react"
 
 function StatCard(props) {
-    let statMod
-    let mod = ~~((props.score - 10) / 2)
-    if (props.score < 10 && props.score % 2 != 0) {
-        mod -= 1
+    let statMod = props.mod
+    let modFormatString = "neg-stat-mod"
+    if (props.mod > 0) {
+        statMod = "+" + props.mod
+        modFormatString = "pos-stat-mod"
+    } else {
+        if (props.mod === 0) {
+            modFormatString = "zero-stat-mod"
+        }
     }
-    if (mod > 0) {
-        statMod = "+" + mod
-        return (
-            <div>
-                <div className="stat-label">
+    let labelTexts = [ "dex-label", "con-label", "int-label", "wis-label", "cha-label" ]
+    let labelString = labelTexts[props.id]
+    return (
+        <div>
+            <div className="stat-label">
+                <div className={labelString}>
                     {props.stat}
                 </div>
-                <div className="stat-card">
-                    {props.score}
-                </div>
-                <div className="pos-stat-mod">
-                    {statMod}
-                </div>
             </div>
-        )
-    }
-    else {
-        statMod = mod
-        if (mod == 0) {
-            return (
-                <div>
-                    <div className="stat-label">
-                        {props.stat}
-                    </div>
-                    <div className="stat-card">
-                        {props.score}
-                    </div>
-                    <div className="zero-stat-mod">
-                        {statMod}
-                    </div>
-                </div>
-            )
-        }
-        else {
-            return (
-                <div>
-                    <div className="stat-label">
-                        {props.stat}
-                    </div>
-                    <div className="stat-card">
-                        {props.score}
-                    </div>
-                    <div className="neg-stat-mod">
-                        {statMod}
-                    </div>
-                </div>
-            )
-        }
-    }
+            <div className="stat-card">
+                {props.score}
+            </div>
+            <div className={modFormatString}>
+                {statMod}
+            </div>
+        </div>
+    )
+
 }
 
 export default StatCard

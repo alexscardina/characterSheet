@@ -3,7 +3,7 @@ import React from "react"
 function StrengthCard(props) {
     let statMod
     let mod = ~~((props.score - 10) / 2)
-    if (props.score < 10 && props.score % 2 != 0) {
+    if (props.score < 10 && props.score % 2 !== 0) {
         mod -= 1
     }
     if (mod > 0) {
@@ -24,7 +24,7 @@ function StrengthCard(props) {
     }
     else {
         statMod = mod
-        if (mod == 0) {
+        if (mod === 0) {
             return (
                 <div>
                     <div className="strength-label">
